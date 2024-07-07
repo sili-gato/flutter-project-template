@@ -34,10 +34,11 @@ class _SplashScreenState extends State<SplashPage> {
         body: Center(
           child: Container(
             padding: const EdgeInsets.all(20),
-            child: const Column(
+            child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                SizedBox(height: 250, width: 250, child: Image.asset("assets/images/template_icon.png"),),
+                const Text(
                   AppConstants.kAppName,
                   style: TextStyle(
                     fontSize: 30,
